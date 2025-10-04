@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Lobster&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+ES:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playwrite NG Modern", cursive;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+
+.section-one {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/background.jpg);
+  /* background-color: #647FBC; */
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 150px;
+  position: sticky;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0px 5px 10px gray;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+/* Down here  */
+.navbar.scrolled ul li a {
+  color: black;
+}
+
+.logo {
+  font-weight: bold;
+  color: rgb(50, 56, 101);
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar .login-btn {
+  padding: 8px 20px;
+  background-color: rgb(50, 56, 101);
+
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side {
+  margin-left: 100px;
+}
+
+.left-side > h1 {
+  font-size: 5em;
+}
+.left-side > h3 {
+  font-size: 2em;
+}
+.left-side > p {
+  margin-top: 30px;
+}
+.left-side > button {
+  margin-top: 30px;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(50, 56, 101);
+}
+
+/* ABOUT ME PAGE DOWN HERE  */
+
+.section-two {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-two > .left-side {
+  width: 50%;
+}
+.section-two > .left-side > .image-box {
+  width: 500px;
+  height: 500px;
+}
+
+.section-two > .left-side > .image-box img {
+  width: 100%;
+  height: 100%;
+}
+.section-two > .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+
+  padding: 10px;
+}
+.section-two > .right-side > h1 {
+  font-weight: 2000;
+  color: rgb(50, 56, 101);
+}
+.section-two > .right-side > .text {
+  width: 500px;
+}
+.section-two > .right-side > button {
+  padding: 10px;
+  width: 200px;
+  background-color: rgb(50, 56, 101);
+
+  color: white;
+
+  border: none;
+  border-radius: 30px;
+}
+
+/* ================================================= */
+
+/* <!-- Testimonials --> */
+/* section three */
+
+/* ================================================= */
+
+.section-three {
+  width: 100%;
+}
+.section-three .container {
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section-three .container h1 {
+  text-align: center;
+  position: absolute;
+  top: 30px;
+}
+
+/* BOX CONTAINERS */
+
+.section-three .container .box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+}
+
+/* CARD ONE */
+.section-three .container .box-container .box-1 {
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.section-three .container .box-container .box-1 .text {
+  position: absolute;
+  top: 100px;
+}
+
+.section-three .container .box-container .box-1 .image-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  left: 100px;
+}
+
+.section-three .container .box-container .box-1 .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* CARD TWO  */
+
+.section-three .container .box-container .box-2 {
+  width: 400px;
+  height: 400px;
+  box-shadow: 5px 5px 5px gray;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.section-three .container .box-container .box-2 .text {
+  position: absolute;
+  top: 130px;
+}
+
+.section-three .container .box-container .box-2 .image-box {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  top: -80px;
+  left: 140px;
+}
+
+.section-three .container .box-container .box-2 .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* CARD THREE */
+.section-three .container .box-container .box-3 {
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.section-three .container .box-container .box-3 .text {
+  position: absolute;
+  top: 100px;
+}
+
+.section-three .container .box-container .box-3 .image-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 100px;
+}
+
+.section-three .container .box-container .box-3 .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ================================================= */
+
+/* <!-- Service --> */
+/* section Foure */
+
+/* ================================================= */
+
+.section-four {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+
+.section-four .text {
+  text-align: center;
+}
+.section-four .text h1 {
+  font-weight: bolder;
+  color: rgb(50, 56, 101);
+}
+
+/* CARD ONE  */
+
+.section-four .box-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+.section-four .box-container .box-1 {
+  border: 1px solid gray;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.section-four .box-container .box-1:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 5px gray;
+}
+
+.section-four .box-container .box-1 h3 {
+  color: rgb(66, 80, 187);
+
+}
+
+/* CARD TWO  */
+
+.section-four .box-container .box-2 {
+  border: 1px solid gray;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+
+}
+.section-four .box-container .box-2:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 5px gray;
+}
+.section-four .box-container .box-2 h3 {
+  color: rgb(66, 80, 187);
+
+}
+
+/* CARD THREE  */
+
+.section-four .box-container .box-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+
+}
+.section-four .box-container .box-3:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 5px gray;
+}
+
+.section-four .box-container .box-3 h3 {
+  color: rgb(66, 80, 187);
+
+}
+
+/* CARD FOURE  */
+
+.section-four .box-container .box-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+
+}
+.section-four .box-container .box-4:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 5px gray;
+}
+.section-four .box-container .box-4 h3 {
+  color: rgb(66, 80, 187);
+
+}
+
+
+
+
+
+
+
+
+
+/* ================================================= */
+
+/* <!-- Service --> */
+/* section FIVE */
+
+/* ================================================= */
+
+.section-five {
+  width: 100%;
+  background-color: rgb(59, 72, 174);
+ 
+  
+}
+.section-five .parent-box {
+
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+.section-five .parent-box .left-side {
+  color: white;
+}
+.section-five .parent-box .left-side h4{
+  margin-top:5px ;
+}
+.section-five .parent-box .right-side button{
+  padding: 8px 23px;
+  border: none;
+  border-radius:5px ;
+}
+
+
+
+
+
+/* ================================================= */
+
+/* <!-- Service --> */
+/* section SEX */
+
+/* ================================================= */
+
+.section-six {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-six .title {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section-six .title h1 {
+  color: rgb(50, 56, 101);
+}
+
+
+
+/* CARD CONTET ONE */
+
+.section-six .card-one {
+  border: 1px solid gray;
+  display: flex;
+  width: 65%;
+  margin: auto;
+
+
+}
+
+
+.section-six .card-one .cardone-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 40%;
+  margin-left: 50px;
+  padding: 10px;
+
+}
+
+.section-six .card-one .img {
+  width: 400px;
+  height: 400px;
+}
+.section-six .card-one .img img {
+  width:100%;
+  height: 100%;
+}
+
+
+
+
+
+
+/* CARD CONTET TWO */
+.section-six .card-two {
+  border: 1px solid gray;
+  display: flex;
+  width: 65%;
+  margin: auto;
+
+
+}
+
+
+.section-six .card-two .cardtwo-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 40%;
+  margin-left: 50px;
+  padding: 10px;
+
+}
+
+.section-six .card-two .img {
+  width: 400px;
+  height: 400px;
+}
+.section-six .card-two .img img {
+  width:100%;
+  height: 100%;
+}
+
+
